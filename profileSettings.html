@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Settings</title>
+    <link  rel="stylesheet" type="text/css" href="resources/css/style.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container">
+  <div id="profileSettings">
+    <h3>Profile Settings </h3>
+    <p>
+        <br>If you are interested in using SeatMe or for other inquiries, please contact us below: </p><br><br><br>
+      <form class="form-horizontal">
+         <div class="form-group row">
+             <label class="form-control-label col-sm-2" for="oName">Owner Name</label>
+                 <div class="col-sm-4">
+                     <input type="text" class="form-control" id="oName" placeholder="owner name" required contenteditable="true">
+                 </div>
+         </div>
+          <div class="form-group row">
+              <label class="form-control-label col-sm-2" for="contact">Contact</label>
+              <div class="col-sm-4">
+                  <input type="number" class="form-control" id="contact" placeholder="contact" required contenteditable="true">
+              </div>
+          </div>
+          <div class="form-group">
+              <label class="form-control-label col-sm-2" for="email">Email:</label>
+              <div class="col-sm-4">
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" required contenteditable="true">
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-sm-2 form-control-label" for="address"> Address</label>
+              <div class="col-sm-4">
+                  <input class="form-control" type="text" id="address" placeholder="2751 Hennepin Avenue Street" required contenteditable="true"/>
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-sm-2 form-control-label " for="auto-assign"> Auto Assign </label>
+              <div class="col-sm-4" id="auto-assign" contenteditable="true">
+                  <label class=" radio-inline">
+                     <input class="form-control" type="radio" id="auto-on" value="on">on
+                  </label>
+                  <label class=" radio-inline">
+                      <input class="form-control" type="radio" id="auto-off" value="off"  checked >off
+                  </label>
+              </div>
+
+          </div>
+          <div class="form-group row">
+              <label class="col-sm-2 form-control-label" for="week days timings"> Address</label>
+              <div class="col-sm-4">
+                  <input class="form-control" type="text" id="week days timings" placeholder="monday-friday 10:00 AM-9:00 PM" required contenteditable="true"/>
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-sm-2 form-control-label" for="weekend timings"> Address</label>
+              <div class="col-sm-4">
+                  <input class="form-control" type="text" id="weekend timings" placeholder="Saturday-sunday 12:00 PM-06:00 PM" required contenteditable="true"/>
+              </div>
+          </div>
+          <div class="col-sm-offset-2">
+            <span>
+                <button type="submit" class="btn btn-primary"> save </button>
+                <button type="submit" class="btn btn-default"> cancel</button>
+            </span>
+          </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

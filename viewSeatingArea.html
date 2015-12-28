@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Seating Area</title>
+    <link  rel="stylesheet" type="text/css" href="resources/css/style.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+<div id="header"></div>
+<div class="panel-heading" id="viewSeatingArea">
+    <h3>View SeatingArea</h3>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>TableNo</th>
+                <th>Table_size</th>
+                <th>Status</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>10</td>
+                <td>4</td>
+                <td><a href="#fields" role="button" class="btn btn-success disabled" data-toggle="modal" data-backdrop="static">Available</a></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>7</td>
+                <td><a href="#fields" role="button" class="btn btn-danger active" data-toggle="modal" data-backdrop="static">AAAAA10</a></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>2</td>
+                <td><a href="#fields" role="button" class="btn btn-success disabled" data-toggle="modal" data-backdrop="static">Available</a></td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="modal fade " id="fields">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;
+                        </button>
+                        <h4 class="modal-title">Fields!</h4>
+                    </div><!-- end modal-header -->
+                    <form class="form-horizontal">
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label class="col-sm-2 form-control-label" for="confirmation code">confirmation code</label>
+                                <div class="col-sm-4 form-control">
+                                    <a data-target="#details" href="viewReservation.html#details" id="confirmation code" role=button"data-toggle="modal" data-backdrop="static">AAAAA10</a></td>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 form-control-label" for="size">Size</label>
+                                <div class="col-sm-4 form-control">
+                                    <select  id="size" disabled="disabled">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">10</option>
+                                        <option value="12">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 form-control-label" for="status">status</label>
+                                <div class="col-sm-4 form-control">
+                                    <input type="text" id="status" placeholder="status" readonly>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 form-control-label" for="date">date</label>
+                                <div class="col-sm-4 form-control">
+                                    <input type="date" id="date"  readonly>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 form-control-label" for="time">Time</label>
+                                <div class="col-sm-4 form-control">
+                                    <input type="time" id="time"  readonly>
+                                </div>
+                            </div>
+
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

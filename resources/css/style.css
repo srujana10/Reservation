@@ -1,0 +1,102 @@
+body{
+    background-image: url(../images/back-image.jpg);
+    background-size: cover;
+    font-weight: bold;
+    color: silver;
+
+}
+label{
+    color: darkslateblue;
+    font-weight: bold;
+    display: block;
+    float: left;
+    font-family:"Century Schoolbook";
+
+}
+
+div h3{
+    color:fuchsia;
+    text-align:center;
+    font-weight:bold;
+    font-family:"Pristina";
+}
+p{
+    color:darksalmon;
+    align-content: center;
+    text-align:center;
+}
+ ul.nav.nav-tabs li.navbar-header a:hover{
+    color:crimson;
+     background-color: indianred;
+
+
+}
+ li.navbar-header ul.dropdown-menu{
+     background-color: indianred;
+     color:lightpink;
+ }
+ nav  li{
+
+       display: inline-block;
+       position: relative;
+       border:thin;
+       padding: 4%;
+}
+ ul{
+    padding: 0;
+    margin: 0;
+}
+ul ul {
+    position:absolute;
+    display: none;
+}
+
+li:hover ul {
+
+    display: block;
+
+}
+li a {
+    display: block;
+    color: firebrick;
+
+}
+
+li a:hover {
+    color: darksalmon;
+}
+
+ table {
+    color:coral;
+
+}
+
+
+.modal-body .form-horizontal .col-sm-2,
+.modal-body .form-horizontal .col-sm-4 {
+    width: 100%
+}
+
+.modal-body .form-horizontal .control-label {
+    text-align: left;
+}
+.modal-body .form-horizontal .col-sm-offset-2 {
+    margin-left: 15px;
+}
+
+  .modal-dialog .modal-content{
+     background:radial-gradient(circle,mediumorchid,lightpink);
+ }
+.imageFit {
+    max-width: 100%;
+    max-height: 100%;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    max-width: 400px;
+    max-height: 400px;
+}
+

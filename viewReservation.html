@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>View Reservation</title>
+    <link  rel="stylesheet" type="text/css" href="resources/css/style.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<div id="header"></div>
+<div id="viewReservation">
+    <h3 >View Reservation </h3>
+    <div id="confirmation-search">
+    <input type="text" id="confirmcode" placeholder="confirmation code"/>
+    <button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i>
+     </button>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>Confirmation</th>
+                <th>Customer Name</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Table</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><a href="#details" data-toggle="modal" data-backdrop="static">AAAAA10</a></td>
+                <td> Mani</td>
+                <td>05/12/2015 2:30PM</td>
+                <td>confirm</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td><a href="#details" data-toggle="modal" data-backdrop="static">AAAAA10</a></td>
+                <td> Mani</td>
+                <td>05/12/2015 2:30PM</td>
+                <td>confirm</td>
+                <td><a  data-target="#assign-table" href="#assign-table" class="btn btn-success" role="button" data-toggle="modal" data-backdrop="static">Assign</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#details" data-toggle="modal" data-backdrop="static">
+                        AAAAA11
+                    </a>
+                </td>
+                <td>Jill</td>
+                <td>05/12/2015 1:30PM</td>
+                <td>confirm</td>
+                <td>2</td>
+            </tr>
+
+            </tbody>
+            </table>
+        <div class="modal fade " id="details">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;
+                        </button>
+                        <h4 class="modal-title">Details!</h4>
+                    </div><!-- end modal-header -->
+
+                    <form class="form-horizontal">
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label class="col-sm-2 form-control-label" for="confirmation code">confirmation code</label>
+                                <div class="col-sm-4 form-control">
+                                <input  type="text" id="confirmation code" placeholder="confrimation" readonly>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 form-control-label" for="customerName">customerName</label>
+                                <div class="col-sm-4 form-control">
+                                    <input  type="text" id="customerName" placeholder=" customer name" readonly>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 form-control-label" for="phone">Mobile number</label>
+                                <div class="col-sm-4 form-control">
+                                    <input  type="tel" id="phone" placeholder="(111)-435-6767" readonly>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 form-control-label" for="date">Date</label>
+                                <div class="col-sm-4 form-control">
+                                    <input  type="date" id="date"  readonly>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 form-control-label" for="email">Email</label>
+                                <div class="col-sm-4 form-control">
+                                    <input  type="text" id="email" placeholder=" email" readonly>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 form-control-label" for="partySize">Party size</label>
+                                <div class="col-sm-4 form-control">
+                                    <select  id="partySize" disabled="disabled">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">10</option>
+                                        <option value="12">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 form-control-label" for="time">Time</label>
+                                <div class="col-sm-4 form-control">
+                                    <input  type="time" id="time"  readonly>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 form-control-label" for="tableNo">Table Number</label>
+                                <div class="col-sm-4 form-control">
+                                    <select  id="tableNo" disabled="disabled">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer" style="text-align: center">
+                            <button  class="btn btn-primary" type="submit">Save changes</button>
+                            <button class="btn btn-default" type="button" data-dismiss="modal">cancel</button>
+                        </div>
+
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        <div class="modal fade " id="assign-table">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;
+                        </button>
+                        <h4 class="modal-title">Table details!</h4>
+                    </div><!-- end modal-header -->
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Table No</th>
+                                <th>Size</th>
+
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><a href="" data-toggle="modal" data-backdrop="static">1</a></td>
+                                <td>4</td>
+
+                            </tr>
+                            <tr>
+                                <td><a href="" data-toggle="modal" data-backdrop="static">2</a></td>
+                                <td>3</td>
+
+                            </tr>
+                            <tr>
+                                <td><a href="" data-toggle="modal" data-backdrop="static">11</a></td>
+                                <td>9</td>
+
+                            </tr>
+                            <tr>
+                                <td><a href="" data-toggle="modal" data-backdrop="static">10</a></td>
+                                <td>2</td>
+
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    <!--<form class="form-horizontal">
+                        <div class="modal-body">
+                            <div class="form-group ">
+                                <label class="col-sm-2" for="confirmation code">confirmation code</label>
+                                <div class="col-sm-4 form-control">
+                                    <input  type="text" id="confirmation code" placeholder="confrimation" readonly>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2" for="customerName">customerName</label>
+                                <div class="col-sm-4 form-control">
+                                    <input  type="text" id="customerName" placeholder=" customer name" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </form>-->
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
