@@ -70,20 +70,6 @@ li a:hover {
     color:coral;
 
 }
-
-
-.modal-body .form-horizontal .col-sm-2,
-.modal-body .form-horizontal .col-sm-4 {
-    width: 100%
-}
-
-.modal-body .form-horizontal .control-label {
-    text-align: left;
-}
-.modal-body .form-horizontal .col-sm-offset-2 {
-    margin-left: 15px;
-}
-
   .modal-dialog .modal-content{
      background:radial-gradient(circle,mediumorchid,lightpink);
  }
@@ -94,9 +80,9 @@ li a:hover {
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
     margin: auto;
-    width: 400px;
-    height: 400px;
-    max-width: 400px;
-    max-height: 400px;
+    width: 18.75em;
+    height: 18.75em;
+    max-width: 25em;
+    max-height: 25em;
 }
 
