@@ -13,7 +13,7 @@
     <h3>Profile Settings </h3>
     <p>
         <br>If you are interested in using SeatMe or for other inquiries, please contact us below: </p><br><br><br>
-      <form class="form-horizontal">
+      <form class="form-horizontal" role="form">
          <div class="form-group row">
              <label class="form-control-label col-sm-2" for="oName">Owner Name</label>
                  <div class="col-sm-4">
@@ -41,12 +41,10 @@
           <div class="form-group row">
               <label class="col-sm-2 form-control-label " for="auto-assign"> Auto Assign </label>
               <div class="col-sm-4" id="auto-assign" contenteditable="true">
-                  <label class=" radio-inline">
-                     <input class="form-control" type="radio" id="auto-on" value="on">on
-                  </label>
-                  <label class=" radio-inline">
-                      <input class="form-control" type="radio" id="auto-off" value="off"  checked >off
-                  </label>
+                  <div class="radio">
+                  <label><input class="form-group" type="radio" name="autoassign" >on</label>
+                  <label><input class="form-group" type="radio" name="autoassign" >off</label>
+                  </div>
               </div>
 
           </div>
@@ -72,7 +70,7 @@
       </form>
     </div>
   </div>
-</div>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
